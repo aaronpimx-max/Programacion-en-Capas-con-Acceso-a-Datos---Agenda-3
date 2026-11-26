@@ -1,9 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\",
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\lenovo\\source\\repos\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\consoleapp1\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\consoleapp1\\contactonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\contactonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\consoleapp1\\contactodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\contactodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\lenovo\\source\\repos\\programaci\u00F3n en capas con acceso  a datos - agenda 2\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,21 +26,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Contacto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\ConsoleApp1\\Contacto.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Contacto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\ConsoleApp1\\Contacto.cs",
+              "RelativeToolTip": "ConsoleApp1\\Contacto.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T02:47:06.338Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ContactoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\ConsoleApp1\\ContactoNegocio.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\ContactoNegocio.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\ConsoleApp1\\ContactoNegocio.cs",
+              "RelativeToolTip": "ConsoleApp1\\ContactoNegocio.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAiwGMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T02:49:16.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\ConsoleApp1\\ContactoDatos.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\ContactoDatos.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\ConsoleApp1\\ContactoDatos.cs",
+              "RelativeToolTip": "ConsoleApp1\\ContactoDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T02:48:44.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\ConsoleApp1\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\Programaci\u00F3n en Capas con Acceso  a Datos - Agenda 2\\ConsoleApp1\\Program.cs",
               "RelativeToolTip": "ConsoleApp1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAiwPEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-26T02:45:30.799Z",
               "EditorCaption": ""

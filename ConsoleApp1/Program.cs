@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using Entidades;
 using Negocio;
 
@@ -13,14 +14,14 @@ namespace Presentacion
         {
             while (true)
             {
-                Console.WriteLine("\n=== AGENDA DE CONTACTOS (V2) ===");
+                Console.WriteLine("\n=== AGENDA DE CONTACTOS (V2 + CUENTA CTE) ===");
                 Console.WriteLine("1. Agregar contacto");
                 Console.WriteLine("2. Buscar contacto");
                 Console.WriteLine("3. Modificar contacto (por DNI)");
                 Console.WriteLine("4. Eliminar contacto (por DNI)");
                 Console.WriteLine("0. Salir");
                 Console.Write("Opción: ");
-                string op = Console.ReadLine();
+                string op = Console.ReadLine()?.Trim();
 
                 try
                 {
@@ -45,6 +46,10 @@ namespace Presentacion
                             break;
                     }
                 }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Error: Revisá el formato de la fecha (yyyy-MM-dd) o del límite de crédito.");
+                }
                 catch (Exception ex)
                 {
                     Console.WriteLine($"Error: {ex.Message}");
@@ -56,33 +61,33 @@ namespace Presentacion
         {
             var c = LeerDatosContacto(dniFijo: null);
             _negocio.Agregar(c);
-            Console.WriteLine("Contacto agregado correctamente.");
+            Console.WriteLine("Contacto y cuenta corriente agregados correctamente.");
         }
 
         private static void ModificarContacto()
         {
             Console.Write("DNI del contacto a modificar: ");
-            string dni = Console.ReadLine();
+            string dni = Console.ReadLine()?.Trim();
 
             var c = LeerDatosContacto(dniFijo: dni);
             _negocio.Modificar(c);
-            Console.WriteLine("Contacto modificado correctamente.");
+            Console.WriteLine("Contacto y cuenta corriente modificados correctamente.");
         }
 
         private static void EliminarContacto()
         {
             Console.Write("DNI del contacto a eliminar: ");
-            string dni = Console.ReadLine();
+            string dni = Console.ReadLine()?.Trim();
 
             _negocio.Eliminar(dni);
-            Console.WriteLine("Contacto eliminado correctamente.");
+            Console.WriteLine("Contacto y cuenta corriente eliminados correctamente.");
         }
 
         private static void BuscarContacto()
         {
             Console.WriteLine("Buscar por: 1-DNI | 2-APELLIDO | 3-NOMBRES | 4-CALLE");
             Console.Write("Elija criterio: ");
-            string critOp = Console.ReadLine();
+            string critOp = Console.ReadLine()?.Trim();
 
             string criterio;
             switch (critOp)
@@ -105,7 +110,7 @@ namespace Presentacion
             }
 
             Console.Write($"Ingrese {criterio}: ");
-            string valor = Console.ReadLine();
+            string valor = Console.ReadLine()?.Trim();
 
             List<Contacto> resultados = _negocio.Buscar(criterio, valor);
             if (resultados.Count == 0)
@@ -124,6 +129,18 @@ namespace Presentacion
                 Console.WriteLine($"Nacionalidad: {c.Nacionalidad} | Estado Civil: {c.EstadoCivil} | Estudios: {c.NivelEstudios}");
                 Console.WriteLine($"Profesión: {c.ProfesionOcupacion} | Empresa: {c.EmpresaLugarTrabajo} | Pago: {c.MetodoPagoPreferido}");
                 Console.WriteLine($"Observaciones: {c.ObservacionesNotas}");
+
+                if (c.CuentaCorriente != null && c.CuentaCorriente.Id > 0)
+                {
+                    Console.WriteLine(
+                        $"Cuenta Cte #{c.CuentaCorriente.Id} | Apertura: {c.CuentaCorriente.FechaApertura:yyyy-MM-dd} | " +
+                        $"Límite: ${c.CuentaCorriente.LimiteCredito:N2} | Estado Crédito: {c.CuentaCorriente.EstadoCredito}"
+                    );
+                }
+                else
+                {
+                    Console.WriteLine("Cuenta Cte: Sin cuenta corriente registrada.");
+                }
             }
         }
 
@@ -136,7 +153,9 @@ namespace Presentacion
 
             Console.Write("Fecha de alta (yyyy-MM-dd, Enter = hoy): ");
             string fechaStr = Console.ReadLine()?.Trim();
-            DateTime fechaAlta = string.IsNullOrEmpty(fechaStr) ? DateTime.Today : DateTime.Parse(fechaStr);
+            DateTime fechaAlta = string.IsNullOrEmpty(fechaStr)
+                ? DateTime.Today
+                : DateTime.ParseExact(fechaStr, "yyyy-MM-dd", CultureInfo.InvariantCulture);
 
             string estadoCivil = PedirTexto("Estado civil: ");
             string nacionalidad = PedirTexto("Nacionalidad: ");
@@ -161,6 +180,23 @@ namespace Presentacion
 
             string metodoPago = PedirTexto("Método de pago preferido: ");
             string observaciones = PedirTexto("Observaciones/Notas: ");
+
+            Console.WriteLine("--- Datos de Cuenta Corriente ---");
+            Console.Write("Fecha de apertura (yyyy-MM-dd, Enter = hoy): ");
+            string aperturaStr = Console.ReadLine()?.Trim();
+            DateTime fechaApertura = string.IsNullOrEmpty(aperturaStr)
+                ? DateTime.Today
+                : DateTime.ParseExact(aperturaStr, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+            Console.Write("Límite de crédito: ");
+            string limiteStr = Console.ReadLine()?.Trim().Replace(",", ".");
+            decimal limiteCredito = string.IsNullOrEmpty(limiteStr)
+                ? 0m
+                : decimal.Parse(limiteStr, CultureInfo.InvariantCulture);
+
+            Console.Write("Estado del crédito (Activo / Suspendido, Enter = Activo): ");
+            string estadoCredito = Console.ReadLine()?.Trim();
+            if (string.IsNullOrEmpty(estadoCredito)) estadoCredito = "Activo";
 
             return new Contacto
             {
@@ -187,7 +223,13 @@ namespace Presentacion
                 NivelEstudios = nivelEstudios,
                 Estado = estado,
                 MetodoPagoPreferido = metodoPago,
-                ObservacionesNotas = observaciones
+                ObservacionesNotas = observaciones,
+                CuentaCorriente = new CuentaCte
+                {
+                    FechaApertura = fechaApertura,
+                    LimiteCredito = limiteCredito,
+                    EstadoCredito = estadoCredito
+                }
             };
         }
 

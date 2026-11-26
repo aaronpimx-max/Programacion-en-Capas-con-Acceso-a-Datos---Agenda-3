@@ -2,7 +2,16 @@
 
 namespace Entidades
 {
-    public class Contacto
+    public class CuentaCte
+    {
+        public int Id { get; set; }
+        public int ContactoId { get; set; }
+        public DateTime FechaApertura { get; set; }
+        public decimal LimiteCredito { get; set; }
+        public string EstadoCredito { get; set; }
+    }
+
+        public class Contacto
     {
         public int Id { get; set; }
         public string Dni { get; set; }
@@ -30,5 +39,6 @@ namespace Entidades
         public string Estado { get; set; }
         public string MetodoPagoPreferido { get; set; }
         public string ObservacionesNotas { get; set; }
+        public CuentaCte CuentaCorriente { get; set; } = new CuentaCte();
     }
 }

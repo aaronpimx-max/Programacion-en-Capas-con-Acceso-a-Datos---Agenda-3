@@ -72,6 +72,29 @@ namespace Negocio
                 string ig = c.Instagram.Trim();
                 c.Instagram = ig.StartsWith("@") ? ig : "@" + ig;
             }
+
+            if (c.CuentaCorriente == null)
+                c.CuentaCorriente = new CuentaCte();
+
+            if (c.CuentaCorriente.LimiteCredito < 0)
+                throw new ArgumentException("El límite de crédito no puede ser negativo.");
+
+            c.CuentaCorriente.FechaApertura = c.CuentaCorriente.FechaApertura == default
+                ? DateTime.Today
+                : c.CuentaCorriente.FechaApertura.Date;
+
+            string estadoCta = string.IsNullOrWhiteSpace(c.CuentaCorriente.EstadoCredito)
+                ? "Activo"
+                : c.CuentaCorriente.EstadoCredito.Trim();
+
+            if (string.Equals(estadoCta, "activo", StringComparison.OrdinalIgnoreCase))
+                estadoCta = "Activo";
+            else if (string.Equals(estadoCta, "suspendido", StringComparison.OrdinalIgnoreCase))
+                estadoCta = "Suspendido";
+            else
+                throw new ArgumentException("El estado del crédito debe ser Activo o Suspendido.");
+
+            c.CuentaCorriente.EstadoCredito = estadoCta;
         }
     }
 }
