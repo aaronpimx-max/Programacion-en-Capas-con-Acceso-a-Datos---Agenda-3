@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\lenovo\\source\\repos\\consoleapp1\\consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\lenovo\\source\\repos\\consoleapp1\\consoleapp1\\contactonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\contactonegocio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\lenovo\\source\\repos\\consoleapp1\\consoleapp1\\contactodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\contactodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|c:\\users\\lenovo\\source\\repos\\consoleapp1\\consoleapp1\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9577A3A6-BCA0-4717-859F-738F58871D5F}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactoNegocio.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ContactoNegocio.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\ContactoNegocio.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ContactoNegocio.cs",
+              "RelativeToolTip": "ConsoleApp1\\ContactoNegocio.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAiwEwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T02:49:16.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ContactoDatos.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\ContactoDatos.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\ContactoDatos.cs",
+              "RelativeToolTip": "ConsoleApp1\\ContactoDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKkAAABvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T02:48:44.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contacto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Contacto.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Contacto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Contacto.cs",
+              "RelativeToolTip": "ConsoleApp1\\Contacto.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T02:47:06.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+              "RelativeToolTip": "ConsoleApp1\\Program.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAAALgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T02:45:30.799Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
